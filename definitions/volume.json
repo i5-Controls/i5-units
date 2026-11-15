@@ -1,0 +1,80 @@
+{
+  "dimensions": {
+    "length": 3
+  },
+  "reference_unit": "m3",
+  "systems": {
+    "metric": {
+      "m3": {
+        "name": {
+          "singular": "cubic meter",
+          "plural": "cubic meters"
+        },
+        "components": {
+          "m": 3
+        }
+      },
+      "L": {
+        "name": {
+          "singular": "liter",
+          "plural": "liters"
+        },
+        "to_anchor": 0.001,
+        "prefixes": true
+      },
+      "cm3": {
+        "name": {
+          "singular": "cubic centimeter",
+          "plural": "cubic centimeters"
+        },
+        "components": {
+          "cm": 3
+        }
+      },
+      "mm3": {
+        "name": {
+          "singular": "cubic millimeter",
+          "plural": "cubic millimeters"
+        },
+        "components": {
+          "mm": 3
+        }
+      }
+    },
+    "imperial": {
+      "in3": {
+        "name": {
+          "singular": "cubic inch",
+          "plural": "cubic inches"
+        },
+        "components": {
+          "in": 3
+        }
+      },
+      "ft3": {
+        "name": {
+          "singular": "cubic foot",
+          "plural": "cubic feet"
+        },
+        "components": {
+          "ft": 3
+        }
+      },
+      "gal": {
+        "name": {
+          "singular": "US liquid gallon",
+          "plural": "US liquid gallons"
+        },
+        "to_anchor": 1
+      }
+    }
+  },
+  "default_result": true,
+  "anchors": {
+    "imperial": {
+      "metric": {
+        "ratio": 0.003785411784
+      }
+    }
+  }
+}

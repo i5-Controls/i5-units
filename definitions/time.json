@@ -1,0 +1,40 @@
+{
+  "dimensions": {
+    "time": 1
+  },
+  "reference_unit": "s",
+  "systems": {
+    "metric": {
+      "s": {
+        "name": {
+          "singular": "second",
+          "plural": "seconds"
+        },
+        "to_anchor": 1,
+        "prefixes": true
+      },
+      "min": {
+        "name": {
+          "singular": "minute",
+          "plural": "minutes"
+        },
+        "to_anchor": 60
+      },
+      "h": {
+        "name": {
+          "singular": "hour",
+          "plural": "hours"
+        },
+        "to_anchor": 3600
+      },
+      "d": {
+        "name": {
+          "singular": "day",
+          "plural": "days"
+        },
+        "to_anchor": 86400
+      }
+    }
+  },
+  "default_result": true
+}

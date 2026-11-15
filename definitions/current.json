@@ -1,0 +1,19 @@
+{
+  "dimensions": {
+    "current": 1
+  },
+  "reference_unit": "A",
+  "systems": {
+    "metric": {
+      "A": {
+        "name": {
+          "singular": "ampere",
+          "plural": "amperes"
+        },
+        "to_anchor": 1,
+        "prefixes": true
+      }
+    }
+  },
+  "default_result": true
+}

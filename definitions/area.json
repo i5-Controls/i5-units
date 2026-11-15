@@ -1,0 +1,38 @@
+{
+  "dimensions": {
+    "length": 2
+  },
+  "reference_unit": "m2",
+  "systems": {
+    "metric": {
+      "m2": {
+        "name": {
+          "singular": "square meter",
+          "plural": "square meters"
+        },
+        "components": {
+          "m": 2
+        }
+      },
+      "cm2": {
+        "name": {
+          "singular": "square centimeter",
+          "plural": "square centimeters"
+        },
+        "components": {
+          "cm": 2
+        }
+      },
+      "mm2": {
+        "name": {
+          "singular": "square millimeter",
+          "plural": "square millimeters"
+        },
+        "components": {
+          "mm": 2
+        }
+      }
+    }
+  },
+  "default_result": true
+}

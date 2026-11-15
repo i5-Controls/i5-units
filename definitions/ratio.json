@@ -1,0 +1,30 @@
+{
+  "dimensions": {},
+  "reference_unit": "1",
+  "systems": {
+    "metric": {
+      "1": {
+        "name": {
+          "singular": "one",
+          "plural": "ones"
+        },
+        "to_anchor": 1
+      },
+      "%": {
+        "name": {
+          "singular": "percent",
+          "plural": "percent"
+        },
+        "to_anchor": 0.01
+      },
+      "ppm": {
+        "name": {
+          "singular": "part per million",
+          "plural": "parts per million"
+        },
+        "to_anchor": 1e-6
+      }
+    }
+  },
+  "default_result": true
+}

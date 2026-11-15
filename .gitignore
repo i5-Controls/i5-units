@@ -1,0 +1,13 @@
+node_modules/
+.pnpm-store/
+target/
+result
+result-*
+*.tgz
+python/.venv/
+python/dist/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+
+# dist/ is committed so Git dependencies work without install scripts.

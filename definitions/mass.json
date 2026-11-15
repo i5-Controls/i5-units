@@ -1,0 +1,42 @@
+{
+  "dimensions": {
+    "mass": 1
+  },
+  "reference_unit": "kg",
+  "systems": {
+    "metric": {
+      "g": {
+        "name": {
+          "singular": "gram",
+          "plural": "grams"
+        },
+        "to_anchor": 0.001,
+        "prefixes": true
+      }
+    },
+    "imperial": {
+      "lb": {
+        "name": {
+          "singular": "pound",
+          "plural": "pounds"
+        },
+        "to_anchor": 1
+      },
+      "oz": {
+        "name": {
+          "singular": "ounce",
+          "plural": "ounces"
+        },
+        "to_anchor": 0.0625
+      }
+    }
+  },
+  "anchors": {
+    "imperial": {
+      "metric": {
+        "ratio": 0.45359237
+      }
+    }
+  },
+  "default_result": true
+}

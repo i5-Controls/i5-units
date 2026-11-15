@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:i5:units:measure-definition",
+  "title": "i5 unit measure definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dimensions", "reference_unit"],
+  "properties": {
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "not": {
+          "const": 0
+        }
+      }
+    },
+    "reference_unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": ["linear", "absolute", "difference"]
+    },
+    "systems": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "$ref": "#/$defs/unit"
+        }
+      }
+    },
+    "anchors": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "$ref": "#/$defs/anchor"
+        }
+      }
+    },
+    "default_result": {
+      "type": "boolean"
+    },
+    "quotients": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/quotient"
+      }
+    }
+  },
+  "$defs": {
+    "coefficient": {
+      "oneOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["numerator", "denominator"],
+          "properties": {
+            "numerator": {
+              "type": "number"
+            },
+            "denominator": {
+              "type": "number",
+              "not": {
+                "const": 0
+              }
+            }
+          }
+        }
+      ]
+    },
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["singular", "plural"],
+          "properties": {
+            "singular": {
+              "type": "string",
+              "minLength": 1
+            },
+            "plural": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "to_anchor": {
+          "$ref": "#/$defs/coefficient"
+        },
+        "anchor_shift": {
+          "$ref": "#/$defs/coefficient"
+        },
+        "prefixes": {
+          "oneOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["component", "symbols"],
+              "properties": {
+                "component": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "symbols": {
+                  "oneOf": [
+                    {
+                      "const": true
+                    },
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "components": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "integer",
+            "not": {
+              "const": 0
+            }
+          }
+        }
+      },
+      "oneOf": [
+        {
+          "required": ["to_anchor"],
+          "not": {
+            "required": ["components"]
+          }
+        },
+        {
+          "required": ["components"],
+          "not": {
+            "required": ["to_anchor"]
+          }
+        }
+      ],
+      "allOf": [
+        {
+          "if": {
+            "required": ["prefixes"],
+            "properties": {
+              "prefixes": {
+                "type": "object"
+              }
+            }
+          },
+          "then": {
+            "required": ["components"]
+          }
+        }
+      ]
+    },
+    "anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "oneOf": [
+        {
+          "required": ["ratio"]
+        },
+        {
+          "required": ["transform"]
+        }
+      ],
+      "properties": {
+        "ratio": {
+          "$ref": "#/$defs/coefficient"
+        },
+        "transform": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["scale", "offset"],
+          "properties": {
+            "scale": {
+              "$ref": "#/$defs/coefficient"
+            },
+            "offset": {
+              "$ref": "#/$defs/coefficient"
+            }
+          }
+        }
+      }
+    },
+    "unitSelection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["measure"],
+      "properties": {
+        "measure": {
+          "type": "string",
+          "minLength": 1
+        },
+        "units": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "quotient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["numerator", "denominator"],
+      "properties": {
+        "numerator": {
+          "$ref": "#/$defs/unitSelection"
+        },
+        "denominator": {
+          "$ref": "#/$defs/unitSelection"
+        },
+        "spellings": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  },
+  "anyOf": [
+    {
+      "required": ["systems"]
+    },
+    {
+      "required": ["quotients"]
+    }
+  ]
+}

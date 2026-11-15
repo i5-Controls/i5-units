@@ -1,0 +1,55 @@
+{
+  "dimensions": {
+    "temperature": 1
+  },
+  "reference_unit": "K",
+  "systems": {
+    "metric": {
+      "K": {
+        "name": {
+          "singular": "kelvin",
+          "plural": "kelvins"
+        },
+        "to_anchor": 1,
+        "prefixes": true
+      },
+      "C": {
+        "name": {
+          "singular": "degree Celsius",
+          "plural": "degrees Celsius"
+        },
+        "to_anchor": 1,
+        "anchor_shift": -273.15
+      }
+    },
+    "imperial": {
+      "F": {
+        "name": {
+          "singular": "degree Fahrenheit",
+          "plural": "degrees Fahrenheit"
+        },
+        "to_anchor": 1,
+        "anchor_shift": -459.67
+      },
+      "R": {
+        "name": {
+          "singular": "degree Rankine",
+          "plural": "degrees Rankine"
+        },
+        "to_anchor": 1
+      }
+    }
+  },
+  "kind": "absolute",
+  "anchors": {
+    "imperial": {
+      "metric": {
+        "ratio": {
+          "numerator": 5,
+          "denominator": 9
+        }
+      }
+    }
+  },
+  "default_result": false
+}

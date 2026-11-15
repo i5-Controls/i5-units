@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0",
+  "dimensions": [
+    "length",
+    "mass",
+    "time",
+    "current",
+    "temperature",
+    "amount",
+    "luminosity",
+    "angle",
+    "standardGasVolume",
+    "normalGasVolume"
+  ],
+  "format_version": 1,
+  "basis": {
+    "length": "m",
+    "mass": "kg",
+    "time": "s",
+    "current": "A",
+    "temperature": "K",
+    "angle": "rad",
+    "standardGasVolume": "Sm3",
+    "normalGasVolume": "Nm3"
+  }
+}

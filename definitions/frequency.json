@@ -1,0 +1,21 @@
+{
+  "dimensions": {
+    "time": -1
+  },
+  "reference_unit": "Hz",
+  "systems": {
+    "metric": {
+      "Hz": {
+        "name": {
+          "singular": "hertz",
+          "plural": "hertz"
+        },
+        "prefixes": true,
+        "components": {
+          "s": -1
+        }
+      }
+    }
+  },
+  "default_result": true
+}

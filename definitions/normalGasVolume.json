@@ -1,0 +1,48 @@
+{
+  "dimensions": {
+    "normalGasVolume": 1
+  },
+  "reference_unit": "Nm3",
+  "default_result": true,
+  "systems": {
+    "metric": {
+      "Nm3": {
+        "name": {
+          "singular": "normal cubic meter",
+          "plural": "normal cubic meters"
+        },
+        "to_anchor": 1
+      },
+      "NL": {
+        "name": {
+          "singular": "normal liter",
+          "plural": "normal liters"
+        },
+        "to_anchor": 0.001
+      },
+      "ncc": {
+        "name": {
+          "singular": "normal cubic centimeter",
+          "plural": "normal cubic centimeters"
+        },
+        "to_anchor": 0.000001
+      }
+    },
+    "imperial": {
+      "Nft3": {
+        "name": {
+          "singular": "normal cubic foot",
+          "plural": "normal cubic feet"
+        },
+        "to_anchor": 1
+      }
+    }
+  },
+  "anchors": {
+    "imperial": {
+      "metric": {
+        "ratio": 0.028316846592
+      }
+    }
+  }
+}

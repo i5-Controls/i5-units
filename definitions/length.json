@@ -1,0 +1,56 @@
+{
+  "dimensions": {
+    "length": 1
+  },
+  "reference_unit": "m",
+  "systems": {
+    "metric": {
+      "m": {
+        "name": {
+          "singular": "meter",
+          "plural": "meters"
+        },
+        "to_anchor": 1,
+        "prefixes": true
+      }
+    },
+    "imperial": {
+      "in": {
+        "name": {
+          "singular": "inch",
+          "plural": "inches"
+        },
+        "to_anchor": 1
+      },
+      "ft": {
+        "name": {
+          "singular": "foot",
+          "plural": "feet"
+        },
+        "to_anchor": 12
+      },
+      "yd": {
+        "name": {
+          "singular": "yard",
+          "plural": "yards"
+        },
+        "to_anchor": 36
+      },
+      "mi": {
+        "name": {
+          "singular": "mile",
+          "plural": "miles"
+        },
+        "to_anchor": 63360
+      }
+    }
+  },
+  "anchors": {
+    "imperial": {
+      "metric": {
+        "ratio": 0.0254
+      }
+    }
+  },
+  "default_result": true
+}

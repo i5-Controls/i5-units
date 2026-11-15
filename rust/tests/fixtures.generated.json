@@ -1,0 +1,1082 @@
+{
+  "conversions": [
+    { "value": 1, "from": "s", "to": "ms", "expected": 1000 },
+    { "value": 1, "from": "s", "to": "µs", "expected": 1000000 },
+    { "value": 1, "from": "ms", "to": "µs", "expected": 1000 },
+    { "value": 1250, "from": "µs", "to": "ms", "expected": 1.25 },
+    { "value": 1, "from": "ns", "to": "s", "expected": 1e-9 },
+    { "value": 1, "from": "Qs", "to": "qs", "expected": 1e60 },
+    { "value": 1, "from": "m", "to": "cm", "expected": 100 },
+    { "value": 1, "from": "kg", "to": "g", "expected": 1000 },
+    { "value": 1000, "from": "mg", "to": "g", "expected": 1 },
+    { "value": 1, "from": "in", "to": "cm", "expected": 2.54 },
+    { "value": 1, "from": "bar", "to": "Pa", "expected": 100000 },
+    { "value": 1, "from": "kPa", "to": "bar", "expected": 0.01 },
+    { "value": 1, "from": "L", "to": "mL", "expected": 1000 },
+    {
+      "value": 1,
+      "from": "mL/min",
+      "to": "m3/s",
+      "expected": 1.6666666666666667e-8
+    },
+    { "value": 1, "from": "h", "to": "s", "expected": 3600 },
+    { "value": 1, "from": "m/s", "to": "km/h", "expected": 3.6 },
+    { "value": 0, "from": "C", "to": "K", "expected": 273.15 },
+    { "value": 32, "from": "F", "to": "C", "expected": 0 },
+    { "value": 100, "from": "C", "to": "F", "expected": 212 },
+    { "value": 0, "from": "R", "to": "K", "expected": 0 },
+    { "value": 1, "from": "ΔC", "to": "ΔF", "expected": 1.8 },
+    { "value": 50, "from": "%", "to": "1", "expected": 0.5 },
+    {
+      "value": 1,
+      "from": "rpm",
+      "to": "rad/s",
+      "expected": 0.10471975511965977
+    },
+    { "value": 1, "from": "mm2", "to": "m2", "expected": 0.000001 },
+    { "value": 1, "from": "mm3", "to": "m3", "expected": 1e-9 },
+    { "value": 1e308, "from": "km", "to": "Mm", "expected": 1e305 },
+    { "value": 1e-300, "from": "qs", "to": "rs", "expected": 1e-303 },
+    { "value": 212, "from": "F", "to": "C", "expected": 100 },
+    { "value": 0.1, "from": "ms", "to": "µs", "expected": 100 },
+    { "value": 1, "from": "gal", "to": "in3", "expected": 231 },
+    { "value": 1, "from": "gal", "to": "L", "expected": 3.785411784 },
+    { "value": 1, "from": "in3", "to": "mL", "expected": 16.387064 },
+    { "value": 1, "from": "ft3", "to": "L", "expected": 28.316846592 },
+    { "value": 1, "from": "µL/min", "to": "mL/min", "expected": 0.001 },
+    { "value": 1, "from": "mL/s", "to": "mL/min", "expected": 60 },
+    { "value": 60, "from": "mL/h", "to": "mL/min", "expected": 1 },
+    { "value": 60, "from": "L/h", "to": "L/min", "expected": 1 },
+    { "value": 1, "from": "cm3/s", "to": "mL/min", "expected": 60 },
+    { "value": 1, "from": "cm3/min", "to": "mL/min", "expected": 1 },
+    { "value": 60, "from": "cm3/h", "to": "mL/min", "expected": 1 },
+    { "value": 1, "from": "m3/min", "to": "L/min", "expected": 1000 },
+    { "value": 60, "from": "m3/h", "to": "L/min", "expected": 1000 },
+    { "value": 1440, "from": "m3/d", "to": "L/min", "expected": 1000 },
+    { "value": 1, "from": "gal/min", "to": "L/min", "expected": 3.785411784 },
+    { "value": 60, "from": "gal/h", "to": "L/min", "expected": 3.785411784 },
+    { "value": 1, "from": "in3/min", "to": "mL/min", "expected": 16.387064 },
+    { "value": 1, "from": "ft3/min", "to": "L/min", "expected": 28.316846592 },
+    { "value": 60, "from": "ft3/h", "to": "L/min", "expected": 28.316846592 },
+    { "value": 1440, "from": "ft3/d", "to": "L/min", "expected": 28.316846592 },
+    { "value": 1, "from": "kg/s", "to": "g/s", "expected": 1000 },
+    { "value": 60, "from": "kg/min", "to": "kg/s", "expected": 1 },
+    { "value": 3600, "from": "kg/h", "to": "kg/s", "expected": 1 },
+    { "value": 1, "from": "g/s", "to": "kg/s", "expected": 0.001 },
+    { "value": 60, "from": "g/min", "to": "kg/s", "expected": 0.001 },
+    { "value": 3600, "from": "g/h", "to": "kg/s", "expected": 0.001 },
+    { "value": 1, "from": "mg/s", "to": "kg/s", "expected": 0.000001 },
+    { "value": 60, "from": "mg/min", "to": "g/s", "expected": 0.001 },
+    { "value": 1, "from": "oz/s", "to": "g/s", "expected": 28.349523125 },
+    { "value": 60, "from": "oz/min", "to": "g/s", "expected": 28.349523125 },
+    { "value": 60, "from": "lb/min", "to": "kg/s", "expected": 0.45359237 },
+    { "value": 3600, "from": "lb/h", "to": "kg/s", "expected": 0.45359237 },
+    { "value": 1, "from": "Sm3", "to": "SL", "expected": 1000 },
+    { "value": 1, "from": "SL", "to": "scc", "expected": 1000 },
+    { "value": 1, "from": "Sft3", "to": "SL", "expected": 28.316846592 },
+    { "value": 1000, "from": "sccm", "to": "slpm", "expected": 1 },
+    { "value": 1, "from": "sccs", "to": "sccm", "expected": 60 },
+    { "value": 1, "from": "SL/s", "to": "slpm", "expected": 60 },
+    { "value": 60, "from": "SL/h", "to": "slpm", "expected": 1 },
+    { "value": 1, "from": "Sm3/s", "to": "slpm", "expected": 60000 },
+    { "value": 1, "from": "Sm3/min", "to": "slpm", "expected": 1000 },
+    { "value": 60, "from": "Sm3/h", "to": "slpm", "expected": 1000 },
+    { "value": 1440, "from": "Sm3/d", "to": "slpm", "expected": 1000 },
+    { "value": 1, "from": "scfm", "to": "slpm", "expected": 28.316846592 },
+    { "value": 60, "from": "scfh", "to": "slpm", "expected": 28.316846592 },
+    { "value": 1440, "from": "scfd", "to": "slpm", "expected": 28.316846592 },
+    { "value": 1, "from": "Nm3", "to": "NL", "expected": 1000 },
+    { "value": 1, "from": "NL", "to": "ncc", "expected": 1000 },
+    { "value": 1, "from": "Nft3", "to": "NL", "expected": 28.316846592 },
+    { "value": 1000, "from": "nccm", "to": "nlpm", "expected": 1 },
+    { "value": 1, "from": "nccs", "to": "nccm", "expected": 60 },
+    { "value": 1, "from": "NL/s", "to": "nlpm", "expected": 60 },
+    { "value": 60, "from": "NL/h", "to": "nlpm", "expected": 1 },
+    { "value": 1, "from": "Nm3/s", "to": "nlpm", "expected": 60000 },
+    { "value": 1, "from": "Nm3/min", "to": "nlpm", "expected": 1000 },
+    { "value": 60, "from": "Nm3/h", "to": "nlpm", "expected": 1000 },
+    { "value": 1440, "from": "Nm3/d", "to": "nlpm", "expected": 1000 },
+    { "value": 1, "from": "ncfm", "to": "nlpm", "expected": 28.316846592 },
+    { "value": 60, "from": "ncfh", "to": "nlpm", "expected": 28.316846592 },
+    { "value": 1440, "from": "ncfd", "to": "nlpm", "expected": 28.316846592 },
+    { "value": 1, "from": "µg/s", "to": "mg/s", "expected": 0.001 },
+    { "value": 60, "from": "µg/min", "to": "mg/s", "expected": 0.001 },
+    { "value": 3600, "from": "µg/h", "to": "mg/s", "expected": 0.001 },
+    { "value": 3600, "from": "mg/h", "to": "mg/s", "expected": 1 },
+    { "value": 86400, "from": "kg/d", "to": "kg/s", "expected": 1 },
+    { "value": 1, "from": "lb/s", "to": "kg/s", "expected": 0.45359237 },
+    { "value": 86400, "from": "lb/d", "to": "kg/s", "expected": 0.45359237 },
+    { "value": 3600, "from": "oz/h", "to": "g/s", "expected": 28.349523125 },
+    { "value": 1, "from": "nL", "to": "L", "expected": 1e-9 },
+    { "value": 1000, "from": "nL/min", "to": "µL/min", "expected": 1 },
+    { "value": 1, "from": "µL/s", "to": "mL/min", "expected": 0.06 },
+    { "value": 60, "from": "kL/min", "to": "L/s", "expected": 1000 },
+    { "value": 1000, "from": "ng/min", "to": "µg/min", "expected": 1 },
+    { "value": 1, "from": "Mg/h", "to": "kg/h", "expected": 1000 },
+    { "value": 1, "from": "ng/s", "to": "g/h", "expected": 0.0000036 },
+    { "value": 1, "from": "Qg/s", "to": "qg/s", "expected": 1e60 },
+    { "value": 1, "from": "QL/min", "to": "qL/min", "expected": 1e60 },
+    { "value": 86400, "from": "g/d", "to": "g/s", "expected": 1 },
+    { "value": 86400, "from": "nL/d", "to": "nL/s", "expected": 1 },
+    { "value": 24, "from": "oz/d", "to": "oz/h", "expected": 1 },
+    { "value": 1, "from": "ft3/s", "to": "L/s", "expected": 28.316846592 },
+    { "value": 1, "from": "mm3/min", "to": "µL/min", "expected": 1 },
+    { "value": 1440, "from": "SL/d", "to": "slpm", "expected": 1 },
+    { "value": 1440, "from": "scc/d", "to": "sccm", "expected": 1 },
+    { "value": 1, "from": "Sft3/s", "to": "scfm", "expected": 60 },
+    { "value": 60, "from": "ncc/h", "to": "nccm", "expected": 1 },
+    { "value": 1, "from": "Nft3/s", "to": "ncfm", "expected": 60 },
+    { "value": 1, "from": "pg/ps", "to": "g/s", "expected": 1 },
+    { "value": 1, "from": "ng/ns", "to": "g/s", "expected": 1 },
+    { "value": 1, "from": "µg/µs", "to": "g/s", "expected": 1 },
+    { "value": 1, "from": "mg/ms", "to": "g/s", "expected": 1 },
+    { "value": 1, "from": "kg/ns", "to": "kg/s", "expected": 1000000000 },
+    { "value": 1, "from": "nL/ns", "to": "L/s", "expected": 1 },
+    { "value": 1, "from": "mL/µs", "to": "L/s", "expected": 1000 },
+    { "value": 1, "from": "scc/ms", "to": "sccm", "expected": 60000 },
+    { "value": 1, "from": "ncc/µs", "to": "nccm", "expected": 60000000 },
+    { "value": 1, "from": "atm", "to": "Pa", "expected": 101325 },
+    { "value": 1, "from": "atm", "to": "Torr", "expected": 760 },
+    { "value": 760, "from": "Torr", "to": "atm", "expected": 1 },
+    { "value": 1, "from": "Torr", "to": "Pa", "expected": 133.32236842105263 },
+    { "value": 1, "from": "mmHg", "to": "Pa", "expected": 133.322387415 },
+    { "value": 1, "from": "inHg", "to": "Pa", "expected": 3386.388640341 },
+    { "value": 1, "from": "inHg", "to": "mmHg", "expected": 25.4 },
+    { "value": 1, "from": "mmHg", "to": "Torr", "expected": 1.0000001424663214 }
+  ],
+  "quantities": [
+    {
+      "name": "velocity",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 10, "units": "m" },
+        "right": { "value": 2, "units": "s" }
+      },
+      "expected": { "value": 5, "units": "m/s" }
+    },
+    {
+      "name": "scaled velocity",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 10, "units": "m" },
+        "right": { "value": 2, "units": "ms" }
+      },
+      "expected": { "value": 5000, "units": "m/s" }
+    },
+    {
+      "name": "velocity conversion",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 10, "units": "m" },
+        "right": { "value": 2, "units": "s" },
+        "to": "km/h"
+      },
+      "expected": { "value": 18, "units": "km/h" }
+    },
+    {
+      "name": "acceleration",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 10, "units": "m/s" },
+        "right": { "value": 2, "units": "s" }
+      },
+      "expected": { "value": 5, "units": "m/s2" }
+    },
+    {
+      "name": "length cancellation",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 5, "units": "m/s" },
+        "right": { "value": 2, "units": "s" }
+      },
+      "expected": { "value": 10, "units": "m" }
+    },
+    {
+      "name": "mixed length addition",
+      "expression": {
+        "op": "add",
+        "left": { "value": 1, "units": "m" },
+        "right": { "value": 50, "units": "cm" }
+      },
+      "expected": { "value": 1.5, "units": "m" }
+    },
+    {
+      "name": "mixed mass subtraction",
+      "expression": {
+        "op": "subtract",
+        "left": { "value": 1, "units": "kg" },
+        "right": { "value": 50, "units": "g" }
+      },
+      "expected": { "value": 0.95, "units": "kg" }
+    },
+    {
+      "name": "dimensionless ratio",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 1, "units": "m" },
+        "right": { "value": 50, "units": "cm" }
+      },
+      "expected": { "value": 2, "units": "1" }
+    },
+    {
+      "name": "prefix area",
+      "expression": {
+        "op": "pow",
+        "left": { "value": 2, "units": "cm" },
+        "exponent": 2,
+        "to": "cm2"
+      },
+      "expected": { "value": 4, "units": "cm2" }
+    },
+    {
+      "name": "inverse time",
+      "expression": {
+        "op": "pow",
+        "left": { "value": 2, "units": "ms" },
+        "exponent": -1
+      },
+      "expected": { "value": 500, "units": "Hz" }
+    },
+    {
+      "name": "zeroth power",
+      "expression": {
+        "op": "pow",
+        "left": { "value": 3, "units": "m" },
+        "exponent": 0
+      },
+      "expected": { "value": 1, "units": "1" }
+    },
+    {
+      "name": "area root composition",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 2, "units": "m" },
+        "right": { "value": 3, "units": "m" }
+      },
+      "expected": { "value": 6, "units": "m2" }
+    },
+    {
+      "name": "energy explicit",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 2, "units": "N" },
+        "right": { "value": 3, "units": "m" },
+        "to": "J"
+      },
+      "expected": { "value": 6, "units": "J" }
+    },
+    {
+      "name": "torque explicit",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 2, "units": "N" },
+        "right": { "value": 3, "units": "m" },
+        "to": "N*m"
+      },
+      "expected": { "value": 6, "units": "N*m" }
+    },
+    {
+      "name": "energy scaling preserves measure",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 10, "units": "J" },
+        "right": { "value": 50, "units": "%" }
+      },
+      "expected": { "value": 5, "units": "J" }
+    },
+    {
+      "name": "absolute subtraction",
+      "expression": {
+        "op": "subtract",
+        "left": { "value": 30, "units": "C" },
+        "right": { "value": 20, "units": "C" }
+      },
+      "expected": { "value": 10, "units": "ΔK" }
+    },
+    {
+      "name": "temperature difference conversion",
+      "expression": {
+        "op": "subtract",
+        "left": { "value": 30, "units": "C" },
+        "right": { "value": 20, "units": "C" },
+        "to": "ΔF"
+      },
+      "expected": { "value": 18, "units": "ΔF" }
+    },
+    {
+      "name": "absolute plus difference",
+      "expression": {
+        "op": "add",
+        "left": { "value": 20, "units": "C" },
+        "right": { "value": 18, "units": "ΔF" }
+      },
+      "expected": { "value": 30, "units": "C" }
+    },
+    {
+      "name": "difference plus absolute",
+      "expression": {
+        "op": "add",
+        "left": { "value": 18, "units": "ΔF" },
+        "right": { "value": 20, "units": "C" }
+      },
+      "expected": { "value": 30, "units": "C" }
+    },
+    {
+      "name": "absolute minus difference",
+      "expression": {
+        "op": "subtract",
+        "left": { "value": 20, "units": "C" },
+        "right": { "value": 10, "units": "ΔK" }
+      },
+      "expected": { "value": 10, "units": "C" }
+    },
+    {
+      "name": "integral float exponent",
+      "expression": {
+        "op": "pow",
+        "left": { "value": 2, "units": "cm" },
+        "exponent": 2,
+        "to": "cm2"
+      },
+      "expected": { "value": 4, "units": "cm2" }
+    },
+    {
+      "name": "small affine identity",
+      "expression": { "value": 1e-15, "units": "C" },
+      "expected": { "value": 1e-15, "units": "C" }
+    },
+    {
+      "name": "large stored quantity",
+      "expression": { "value": 1e308, "units": "km", "to": "Mm" },
+      "expected": { "value": 1e305, "units": "Mm" }
+    },
+    {
+      "name": "tiny stored quantity",
+      "expression": { "value": 1e-300, "units": "qs", "to": "rs" },
+      "expected": { "value": 1e-303, "units": "rs" }
+    },
+    {
+      "name": "negative scalar at rational power limit",
+      "expression": {
+        "op": "pow",
+        "left": { "value": -1, "units": "1" },
+        "exponent": 100000
+      },
+      "expected": { "value": 1, "units": "1" }
+    },
+    {
+      "name": "mass divided by elapsed time infers mass flow",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 120, "units": "g" },
+        "right": { "value": 2, "units": "min" }
+      },
+      "expected": { "value": 0.001, "units": "kg/s" }
+    },
+    {
+      "name": "mass flow integrated over time yields mass",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 60, "units": "g/min" },
+        "right": { "value": 2, "units": "min" },
+        "to": "g"
+      },
+      "expected": { "value": 120, "units": "g" }
+    },
+    {
+      "name": "volume flow integrated over time yields volume",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 60, "units": "mL/min" },
+        "right": { "value": 2, "units": "min" },
+        "to": "mL"
+      },
+      "expected": { "value": 120, "units": "mL" }
+    },
+    {
+      "name": "imperial volume divided by time infers volume flow",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 1, "units": "ft3" },
+        "right": { "value": 1, "units": "min" },
+        "to": "L/min"
+      },
+      "expected": { "value": 28.316846592, "units": "L/min" }
+    },
+    {
+      "name": "mass flow addition converts imperial and metric scales",
+      "expression": {
+        "op": "add",
+        "left": { "value": 1, "units": "kg/s" },
+        "right": { "value": 60, "units": "lb/min" }
+      },
+      "expected": { "value": 1.45359237, "units": "kg/s" }
+    },
+    {
+      "name": "standard gas flow integration preserves reference family",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 1000, "units": "sccm" },
+        "right": { "value": 2, "units": "min" },
+        "to": "SL"
+      },
+      "expected": { "value": 2, "units": "SL" }
+    },
+    {
+      "name": "standard gas volume divided by time infers gas flow",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 1, "units": "SL" },
+        "right": { "value": 1, "units": "min" }
+      },
+      "expected": { "value": 0.000016666666666666667, "units": "Sm3/s" }
+    },
+    {
+      "name": "standard gas flow addition converts within reference family",
+      "expression": {
+        "op": "add",
+        "left": { "value": 1, "units": "slpm" },
+        "right": { "value": 1000, "units": "sccm" },
+        "to": "slpm"
+      },
+      "expected": { "value": 2, "units": "slpm" }
+    },
+    {
+      "name": "normal gas flow integration preserves reference family",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 1000, "units": "nccm" },
+        "right": { "value": 2, "units": "min" },
+        "to": "NL"
+      },
+      "expected": { "value": 2, "units": "NL" }
+    },
+    {
+      "name": "normal gas volume divided by time infers gas flow",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 1, "units": "NL" },
+        "right": { "value": 1, "units": "min" }
+      },
+      "expected": { "value": 0.000016666666666666667, "units": "Nm3/s" }
+    },
+    {
+      "name": "normal gas flow addition converts within reference family",
+      "expression": {
+        "op": "add",
+        "left": { "value": 1, "units": "nlpm" },
+        "right": { "value": 1000, "units": "nccm" },
+        "to": "nlpm"
+      },
+      "expected": { "value": 2, "units": "nlpm" }
+    },
+    {
+      "name": "flow integrated over prefixed time preserves exact scale",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 2, "units": "mg/ms" },
+        "right": { "value": 500, "units": "µs" },
+        "to": "mg"
+      },
+      "expected": { "value": 1, "units": "mg" }
+    }
+  ],
+  "failures": [
+    {
+      "name": "incompatible sum",
+      "expression": {
+        "op": "add",
+        "left": { "value": 1, "units": "m" },
+        "right": { "value": 1, "units": "s" }
+      },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "zero denominator",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 1, "units": "m" },
+        "right": { "value": 0, "units": "s" }
+      },
+      "code": "INVALID_OPERATION"
+    },
+    {
+      "name": "ambiguous result",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 1, "units": "N" },
+        "right": { "value": 1, "units": "m" }
+      },
+      "code": "UNRESOLVED_UNIT"
+    },
+    {
+      "name": "unregistered density dimensions",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 1, "units": "kg" },
+        "right": { "value": 1, "units": "m3" }
+      },
+      "code": "UNRESOLVED_UNIT"
+    },
+    {
+      "name": "wrong result dimensions",
+      "expression": {
+        "op": "divide",
+        "left": { "value": 1, "units": "m" },
+        "right": { "value": 1, "units": "s" },
+        "to": "Pa"
+      },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "energy versus torque",
+      "expression": {
+        "op": "add",
+        "left": { "value": 1, "units": "J" },
+        "right": { "value": 1, "units": "N*m" }
+      },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "absolute multiplication",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 1, "units": "C" },
+        "right": { "value": 1, "units": "m" }
+      },
+      "code": "INVALID_OPERATION"
+    },
+    {
+      "name": "absolute addition",
+      "expression": {
+        "op": "add",
+        "left": { "value": 1, "units": "C" },
+        "right": { "value": 1, "units": "K" }
+      },
+      "code": "INVALID_OPERATION"
+    },
+    {
+      "name": "difference minus absolute",
+      "expression": {
+        "op": "subtract",
+        "left": { "value": 1, "units": "ΔK" },
+        "right": { "value": 1, "units": "C" }
+      },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "fractional exponent",
+      "expression": {
+        "op": "pow",
+        "left": { "value": 1, "units": "m" },
+        "exponent": 0.5
+      },
+      "code": "INVALID_OPERATION"
+    },
+    {
+      "name": "absolute power",
+      "expression": {
+        "op": "pow",
+        "left": { "value": 1, "units": "K" },
+        "exponent": 2
+      },
+      "code": "INVALID_OPERATION"
+    },
+    {
+      "name": "unknown spelling",
+      "expression": { "value": 1, "units": "Bar" },
+      "code": "UNKNOWN_UNIT"
+    },
+    {
+      "name": "stacked prefix",
+      "expression": { "value": 1, "units": "mms" },
+      "code": "UNKNOWN_UNIT"
+    },
+    {
+      "name": "ASCII micro alias",
+      "expression": { "value": 1, "units": "us" },
+      "code": "UNKNOWN_UNIT"
+    },
+    {
+      "name": "Greek mu alias",
+      "expression": { "value": 1, "units": "μs" },
+      "code": "UNKNOWN_UNIT"
+    },
+    {
+      "name": "prefix on minute",
+      "expression": { "value": 1, "units": "mmin" },
+      "code": "UNKNOWN_UNIT"
+    },
+    {
+      "name": "prefix on Celsius",
+      "expression": { "value": 1, "units": "mC" },
+      "code": "UNKNOWN_UNIT"
+    },
+    {
+      "name": "mass and volumetric flow are incompatible",
+      "expression": {
+        "op": "add",
+        "left": { "value": 1, "units": "kg/s" },
+        "right": { "value": 1, "units": "m3/s" }
+      },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "mass flow cannot convert to volume flow without density",
+      "expression": { "value": 1, "units": "kg/s", "to": "L/min" },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "standard gas flow cannot convert to actual volume flow",
+      "expression": { "value": 1, "units": "sccm", "to": "mL/min" },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "standard and normal gas flow are incompatible",
+      "expression": { "value": 1, "units": "sccm", "to": "nccm" },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "normal gas flow cannot convert to actual volume flow",
+      "expression": { "value": 1, "units": "nlpm", "to": "L/min" },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "gas flow cannot convert to mass without gas density",
+      "expression": { "value": 1, "units": "slpm", "to": "g/min" },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "standard and normal gas readings cannot be added",
+      "expression": {
+        "op": "add",
+        "left": { "value": 1, "units": "sccm" },
+        "right": { "value": 1, "units": "nccm" }
+      },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "standard gas totalizer cannot lose its reference family",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 1, "units": "slpm" },
+        "right": { "value": 1, "units": "min" },
+        "to": "L"
+      },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "normal gas totalizer cannot convert to standard volume",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 1, "units": "nlpm" },
+        "right": { "value": 1, "units": "min" },
+        "to": "SL"
+      },
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "name": "gas family is preserved when scaled by dimensionless ratio",
+      "expression": {
+        "op": "multiply",
+        "left": { "value": 1, "units": "sccm" },
+        "right": { "value": 1, "units": "1" },
+        "to": "m3/s"
+      },
+      "code": "INCOMPATIBLE_UNITS"
+    }
+  ],
+  "constraints": [
+    {
+      "value": 1,
+      "from": "ms",
+      "to": "µs",
+      "constraints": { "integer": true, "maximum": 1000 },
+      "expected": 1000
+    },
+    {
+      "value": 212,
+      "from": "F",
+      "to": "C",
+      "constraints": { "maximum": 100 },
+      "expected": 100
+    },
+    {
+      "value": 0.1,
+      "from": "s",
+      "to": "ms",
+      "constraints": { "integer": true, "maximum": 100 },
+      "expected": 100
+    },
+    {
+      "value": 1.0000000000000002,
+      "from": "ms",
+      "to": "µs",
+      "constraints": { "integer": true, "maximum": 1000 },
+      "expected": 1000
+    },
+    {
+      "value": 1.0000001,
+      "from": "ms",
+      "to": "µs",
+      "constraints": { "integer": true, "maximum": 1000 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "value": 0.1,
+      "from": "µs",
+      "to": "ms",
+      "constraints": { "integer": true },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "value": 1e-30,
+      "from": "s",
+      "to": "s",
+      "constraints": { "maximum": 0 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "value": 100,
+      "from": "ms",
+      "to": "ms",
+      "constraints": { "exclusive_maximum": 100 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "value": 100,
+      "from": "ms",
+      "to": "ms",
+      "constraints": { "exclusive_minimum": 100 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "value": 0.3,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 0.1 },
+      "expected": 0.3
+    },
+    {
+      "value": 0.31,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 0.1 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "value": 1,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 0 },
+      "code": "INVALID_OPERATION"
+    },
+    {
+      "value": 1,
+      "from": "s",
+      "to": "s",
+      "constraints": { "minimum": 2, "maximum": 1 },
+      "code": "INVALID_OPERATION"
+    },
+    {
+      "value": 2,
+      "from": "m",
+      "to": "s",
+      "constraints": {},
+      "code": "INCOMPATIBLE_UNITS"
+    },
+    {
+      "value": 1000000000000000.5,
+      "from": "s",
+      "to": "s",
+      "constraints": { "integer": true, "maximum": 1000000000000000 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "name": "overflowing multiple index is an exact multiple",
+      "value": 1,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 5e-324 },
+      "expected": 1
+    },
+    {
+      "name": "negative overflowing multiple index is an exact multiple",
+      "value": -1,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 5e-324 },
+      "expected": -1
+    },
+    {
+      "name": "safe integer with an overflowing multiple index",
+      "value": 9007199254740991,
+      "from": "s",
+      "to": "s",
+      "constraints": { "integer": true, "multiple_of": 5e-324 },
+      "expected": 9007199254740991
+    },
+    {
+      "name": "underflowing positive multiple index is nonzero",
+      "value": 1e-300,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 1e300 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "name": "underflowing negative multiple index is nonzero",
+      "value": -1e-300,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 1e300 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "name": "zero is a valid multiple of a large value",
+      "value": 0,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 1e300 },
+      "expected": 0
+    },
+    {
+      "name": "valid interior below inclusive and exclusive upper bounds",
+      "value": 0.9999999999999998,
+      "from": "s",
+      "to": "s",
+      "constraints": { "maximum": 1, "exclusive_maximum": 1 },
+      "expected": 0.9999999999999998
+    },
+    {
+      "name": "valid interior above inclusive and exclusive lower bounds",
+      "value": 1.0000000000000002,
+      "from": "s",
+      "to": "s",
+      "constraints": { "minimum": 1, "exclusive_minimum": 1 },
+      "expected": 1.0000000000000002
+    },
+    {
+      "name": "valid negative interior below both upper bounds",
+      "value": -1.0000000000000002,
+      "from": "s",
+      "to": "s",
+      "constraints": { "maximum": -1, "exclusive_maximum": -1 },
+      "expected": -1.0000000000000002
+    },
+    {
+      "name": "valid negative interior above both lower bounds",
+      "value": -0.9999999999999998,
+      "from": "s",
+      "to": "s",
+      "constraints": { "minimum": -1, "exclusive_minimum": -1 },
+      "expected": -0.9999999999999998
+    },
+    {
+      "name": "outside upper bounds cannot normalize onto excluded endpoint",
+      "value": 1.0000000000000002,
+      "from": "s",
+      "to": "s",
+      "constraints": { "maximum": 1, "exclusive_maximum": 1 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "name": "outside lower bounds cannot normalize onto excluded endpoint",
+      "value": 0.9999999999999998,
+      "from": "s",
+      "to": "s",
+      "constraints": { "minimum": 1, "exclusive_minimum": 1 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "name": "near inclusive upper violation normalizes",
+      "value": 1.0000000000000002,
+      "from": "s",
+      "to": "s",
+      "constraints": { "maximum": 1 },
+      "expected": 1
+    },
+    {
+      "name": "near inclusive lower violation normalizes",
+      "value": 0.9999999999999998,
+      "from": "s",
+      "to": "s",
+      "constraints": { "minimum": 1 },
+      "expected": 1
+    },
+    {
+      "name": "already valid multiple retains its original value",
+      "value": 1,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 1, "maximum": 1.0000000000000002 },
+      "expected": 1
+    },
+    {
+      "name": "already valid interior value is not moved to maximum",
+      "value": 0.9999999999999998,
+      "from": "s",
+      "to": "s",
+      "constraints": { "maximum": 1 },
+      "expected": 0.9999999999999998
+    },
+    {
+      "name": "normalized integer must also obey lower bound",
+      "value": 1.0000000000000002,
+      "from": "s",
+      "to": "s",
+      "constraints": {
+        "integer": true,
+        "minimum": 1.0000000000000002,
+        "maximum": 1.0000000000000004
+      },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "name": "normalization must respect another exclusive bound",
+      "value": 1.0000000000000002,
+      "from": "s",
+      "to": "s",
+      "constraints": { "integer": true, "exclusive_minimum": 1 },
+      "code": "CONSTRAINT_VIOLATION"
+    },
+    {
+      "name": "unknown numeric constraint is rejected",
+      "value": 1,
+      "from": "s",
+      "to": "s",
+      "constraints": { "unknown_constraint": 1 },
+      "code": "INVALID_OPERATION"
+    },
+    {
+      "name": "negative multiple is invalid metadata",
+      "value": 1,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": -0.1 },
+      "code": "INVALID_OPERATION"
+    },
+    {
+      "name": "binary-float multiple index residual exceeds absolute cap",
+      "value": 10000000000,
+      "from": "s",
+      "to": "s",
+      "constraints": { "multiple_of": 0.1 },
+      "code": "CONSTRAINT_VIOLATION"
+    }
+  ],
+  "analyses": [
+    {
+      "op": "divide",
+      "left": "m",
+      "right": "s",
+      "measure": "velocity",
+      "unit": "m/s",
+      "dimensions": { "length": 1, "time": -1 }
+    },
+    {
+      "op": "divide",
+      "left": "km",
+      "right": "ms",
+      "measure": "velocity",
+      "unit": "m/s",
+      "dimensions": { "length": 1, "time": -1 }
+    },
+    {
+      "op": "multiply",
+      "left": "m/s",
+      "right": "s",
+      "measure": "length",
+      "unit": "m",
+      "dimensions": { "length": 1 }
+    },
+    {
+      "op": "multiply",
+      "left": "N",
+      "right": "m",
+      "measure": null,
+      "unit": null,
+      "dimensions": { "mass": 1, "length": 2, "time": -2 }
+    },
+    {
+      "op": "power",
+      "left": "cm",
+      "exponent": 2,
+      "measure": "area",
+      "unit": "m2",
+      "dimensions": { "length": 2 }
+    },
+    {
+      "op": "add",
+      "left": "ms",
+      "right": "µs",
+      "measure": "time",
+      "unit": "ms",
+      "dimensions": { "time": 1 }
+    },
+    {
+      "op": "subtract",
+      "left": "C",
+      "right": "F",
+      "measure": "temperatureDifference",
+      "unit": "ΔK",
+      "dimensions": { "temperature": 1 }
+    },
+    {
+      "op": "divide",
+      "left": "kg",
+      "right": "min",
+      "dimensions": { "mass": 1, "time": -1 },
+      "measure": "massFlowRate",
+      "unit": "kg/s"
+    },
+    {
+      "op": "multiply",
+      "left": "lb/h",
+      "right": "h",
+      "dimensions": { "mass": 1 },
+      "measure": "mass",
+      "unit": "kg"
+    },
+    {
+      "op": "divide",
+      "left": "gal",
+      "right": "min",
+      "dimensions": { "length": 3, "time": -1 },
+      "measure": "volumeFlowRate",
+      "unit": "m3/s"
+    },
+    {
+      "op": "multiply",
+      "left": "sccm",
+      "right": "min",
+      "dimensions": { "standardGasVolume": 1 },
+      "measure": "standardGasVolume",
+      "unit": "Sm3"
+    },
+    {
+      "op": "divide",
+      "left": "SL",
+      "right": "h",
+      "dimensions": { "standardGasVolume": 1, "time": -1 },
+      "measure": "standardGasFlowRate",
+      "unit": "Sm3/s"
+    },
+    {
+      "op": "multiply",
+      "left": "nccm",
+      "right": "min",
+      "dimensions": { "normalGasVolume": 1 },
+      "measure": "normalGasVolume",
+      "unit": "Nm3"
+    },
+    {
+      "op": "divide",
+      "left": "NL",
+      "right": "h",
+      "dimensions": { "normalGasVolume": 1, "time": -1 },
+      "measure": "normalGasFlowRate",
+      "unit": "Nm3/s"
+    }
+  ]
+}

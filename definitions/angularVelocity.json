@@ -1,0 +1,29 @@
+{
+  "dimensions": {
+    "angle": 1,
+    "time": -1
+  },
+  "reference_unit": "rad/s",
+  "systems": {
+    "metric": {
+      "rad/s": {
+        "name": {
+          "singular": "radian per second",
+          "plural": "radians per second"
+        },
+        "components": {
+          "rad": 1,
+          "s": -1
+        }
+      },
+      "rpm": {
+        "name": {
+          "singular": "revolution per minute",
+          "plural": "revolutions per minute"
+        },
+        "to_anchor": 0.10471975511965977
+      }
+    }
+  },
+  "default_result": true
+}

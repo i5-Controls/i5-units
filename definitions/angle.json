@@ -1,0 +1,25 @@
+{
+  "dimensions": {
+    "angle": 1
+  },
+  "reference_unit": "rad",
+  "systems": {
+    "metric": {
+      "rad": {
+        "name": {
+          "singular": "radian",
+          "plural": "radians"
+        },
+        "to_anchor": 1
+      },
+      "deg": {
+        "name": {
+          "singular": "degree",
+          "plural": "degrees"
+        },
+        "to_anchor": 0.017453292519943295
+      }
+    }
+  },
+  "default_result": true
+}

@@ -1,0 +1,25 @@
+{
+  "dimensions": {
+    "mass": 1,
+    "length": 1,
+    "time": -2
+  },
+  "reference_unit": "N",
+  "systems": {
+    "metric": {
+      "N": {
+        "name": {
+          "singular": "newton",
+          "plural": "newtons"
+        },
+        "prefixes": true,
+        "components": {
+          "kg": 1,
+          "m": 1,
+          "s": -2
+        }
+      }
+    }
+  },
+  "default_result": true
+}

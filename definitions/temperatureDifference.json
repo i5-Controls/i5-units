@@ -1,0 +1,52 @@
+{
+  "dimensions": {
+    "temperature": 1
+  },
+  "reference_unit": "ΔK",
+  "systems": {
+    "metric": {
+      "ΔK": {
+        "name": {
+          "singular": "kelvin difference",
+          "plural": "kelvin differences"
+        },
+        "to_anchor": 1
+      },
+      "ΔC": {
+        "name": {
+          "singular": "degree Celsius difference",
+          "plural": "degrees Celsius difference"
+        },
+        "to_anchor": 1
+      }
+    },
+    "imperial": {
+      "ΔF": {
+        "name": {
+          "singular": "degree Fahrenheit difference",
+          "plural": "degrees Fahrenheit difference"
+        },
+        "to_anchor": 1
+      },
+      "ΔR": {
+        "name": {
+          "singular": "degree Rankine difference",
+          "plural": "degrees Rankine difference"
+        },
+        "to_anchor": 1
+      }
+    }
+  },
+  "kind": "difference",
+  "anchors": {
+    "imperial": {
+      "metric": {
+        "ratio": {
+          "numerator": 5,
+          "denominator": 9
+        }
+      }
+    }
+  },
+  "default_result": true
+}

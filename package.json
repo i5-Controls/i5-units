@@ -1,0 +1,47 @@
+{
+  "name": "@i5controls/i5-units",
+  "version": "0.1.0",
+  "description": "JSON unit registry, conversion, and dimensional quantities for i5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i5-Controls/i5-units.git"
+  },
+  "type": "module",
+  "main": "./dist/typescript/index.js",
+  "module": "./dist/typescript/index.js",
+  "types": "./dist/typescript/index.d.ts",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/typescript/index.d.ts",
+      "import": "./dist/typescript/index.js",
+      "default": "./dist/typescript/index.js"
+    },
+    "./registry": "./registry.generated.json"
+  },
+  "files": [
+    "dist",
+    "registry.generated.json",
+    "registry.json",
+    "prefixes.json",
+    "definitions",
+    "spec/definition.schema.json"
+  ],
+  "scripts": {
+    "schema:generate": "node scripts/generate.mjs",
+    "schema:check": "node scripts/generate.mjs --check",
+    "build:node": "node scripts/build.mjs",
+    "build:check": "node scripts/build.mjs --check",
+    "check": "tsc -p typescript/tsconfig.json",
+    "test": "npm run schema:check && npm run build:check && npm run check && node --experimental-strip-types --test scripts/generate.test.mjs typescript/tests/*.test.ts",
+    "test:rust": "cargo test --workspace --locked",
+    "test:python": "uv run --locked --project python pytest python/tests"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "prettier": "3.9.6",
+    "typescript": "^5.7"
+  }
+}

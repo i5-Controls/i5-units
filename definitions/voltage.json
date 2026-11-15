@@ -1,0 +1,25 @@
+{
+  "dimensions": {
+    "mass": 1,
+    "length": 2,
+    "time": -3,
+    "current": -1
+  },
+  "reference_unit": "V",
+  "systems": {
+    "metric": {
+      "V": {
+        "name": {
+          "singular": "volt",
+          "plural": "volts"
+        },
+        "prefixes": true,
+        "components": {
+          "W": 1,
+          "A": -1
+        }
+      }
+    }
+  },
+  "default_result": true
+}

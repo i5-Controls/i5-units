@@ -1,0 +1,35 @@
+{
+  "dimensions": {
+    "mass": 1,
+    "length": 2,
+    "time": -2
+  },
+  "reference_unit": "J",
+  "systems": {
+    "metric": {
+      "J": {
+        "name": {
+          "singular": "joule",
+          "plural": "joules"
+        },
+        "prefixes": true,
+        "components": {
+          "N": 1,
+          "m": 1
+        }
+      },
+      "Wh": {
+        "name": {
+          "singular": "watt hour",
+          "plural": "watt hours"
+        },
+        "prefixes": true,
+        "components": {
+          "W": 1,
+          "h": 1
+        }
+      }
+    }
+  },
+  "default_result": false
+}

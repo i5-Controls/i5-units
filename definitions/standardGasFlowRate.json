@@ -1,0 +1,26 @@
+{
+  "dimensions": {
+    "standardGasVolume": 1,
+    "time": -1
+  },
+  "reference_unit": "Sm3/s",
+  "default_result": true,
+  "quotients": [
+    {
+      "numerator": {
+        "measure": "standardGasVolume"
+      },
+      "denominator": {
+        "measure": "time"
+      },
+      "spellings": {
+        "SL/min": "slpm",
+        "scc/s": "sccs",
+        "scc/min": "sccm",
+        "Sft3/min": "scfm",
+        "Sft3/h": "scfh",
+        "Sft3/d": "scfd"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "dimensions": {
+    "mass": 1,
+    "length": 2,
+    "time": -3
+  },
+  "reference_unit": "W",
+  "systems": {
+    "metric": {
+      "W": {
+        "name": {
+          "singular": "watt",
+          "plural": "watts"
+        },
+        "prefixes": true,
+        "components": {
+          "J": 1,
+          "s": -1
+        }
+      }
+    }
+  },
+  "default_result": true
+}

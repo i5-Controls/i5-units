@@ -1,0 +1,16 @@
+[package]
+name = "i5-units"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+description = "JSON unit registry, conversion, and dimensional quantities for i5"
+repository = "https://github.com/i5-Controls/i5-units"
+readme = "README.md"
+include = ["src/**", "tests/**", "README.md", "Cargo.toml"]
+
+[dependencies]
+num-bigint = "0.4"
+num-rational = "0.4"
+num-traits = "0.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["float_roundtrip"] }

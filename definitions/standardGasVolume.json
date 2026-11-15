@@ -1,0 +1,48 @@
+{
+  "dimensions": {
+    "standardGasVolume": 1
+  },
+  "reference_unit": "Sm3",
+  "default_result": true,
+  "systems": {
+    "metric": {
+      "Sm3": {
+        "name": {
+          "singular": "standard cubic meter",
+          "plural": "standard cubic meters"
+        },
+        "to_anchor": 1
+      },
+      "SL": {
+        "name": {
+          "singular": "standard liter",
+          "plural": "standard liters"
+        },
+        "to_anchor": 0.001
+      },
+      "scc": {
+        "name": {
+          "singular": "standard cubic centimeter",
+          "plural": "standard cubic centimeters"
+        },
+        "to_anchor": 0.000001
+      }
+    },
+    "imperial": {
+      "Sft3": {
+        "name": {
+          "singular": "standard cubic foot",
+          "plural": "standard cubic feet"
+        },
+        "to_anchor": 1
+      }
+    }
+  },
+  "anchors": {
+    "imperial": {
+      "metric": {
+        "ratio": 0.028316846592
+      }
+    }
+  }
+}

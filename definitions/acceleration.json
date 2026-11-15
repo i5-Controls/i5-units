@@ -1,0 +1,22 @@
+{
+  "dimensions": {
+    "length": 1,
+    "time": -2
+  },
+  "reference_unit": "m/s2",
+  "systems": {
+    "metric": {
+      "m/s2": {
+        "name": {
+          "singular": "meter per second squared",
+          "plural": "meters per second squared"
+        },
+        "components": {
+          "m": 1,
+          "s": -2
+        }
+      }
+    }
+  },
+  "default_result": true
+}

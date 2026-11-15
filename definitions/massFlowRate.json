@@ -1,0 +1,18 @@
+{
+  "dimensions": {
+    "mass": 1,
+    "time": -1
+  },
+  "reference_unit": "kg/s",
+  "default_result": true,
+  "quotients": [
+    {
+      "numerator": {
+        "measure": "mass"
+      },
+      "denominator": {
+        "measure": "time"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "dimensions": {
+    "mass": 1,
+    "length": 2,
+    "time": -3,
+    "current": -2
+  },
+  "reference_unit": "ohm",
+  "systems": {
+    "metric": {
+      "ohm": {
+        "name": {
+          "singular": "ohm",
+          "plural": "ohms"
+        },
+        "prefixes": true,
+        "components": {
+          "V": 1,
+          "A": -1
+        }
+      }
+    }
+  },
+  "default_result": true
+}

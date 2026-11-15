@@ -1,0 +1,26 @@
+{
+  "dimensions": {
+    "normalGasVolume": 1,
+    "time": -1
+  },
+  "reference_unit": "Nm3/s",
+  "default_result": true,
+  "quotients": [
+    {
+      "numerator": {
+        "measure": "normalGasVolume"
+      },
+      "denominator": {
+        "measure": "time"
+      },
+      "spellings": {
+        "NL/min": "nlpm",
+        "ncc/s": "nccs",
+        "ncc/min": "nccm",
+        "Nft3/min": "ncfm",
+        "Nft3/h": "ncfh",
+        "Nft3/d": "ncfd"
+      }
+    }
+  ]
+}

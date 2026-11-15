@@ -1,0 +1,98 @@
+{
+  "Q": {
+    "name": "quetta",
+    "exponent": 30
+  },
+  "R": {
+    "name": "ronna",
+    "exponent": 27
+  },
+  "Y": {
+    "name": "yotta",
+    "exponent": 24
+  },
+  "Z": {
+    "name": "zetta",
+    "exponent": 21
+  },
+  "E": {
+    "name": "exa",
+    "exponent": 18
+  },
+  "P": {
+    "name": "peta",
+    "exponent": 15
+  },
+  "T": {
+    "name": "tera",
+    "exponent": 12
+  },
+  "G": {
+    "name": "giga",
+    "exponent": 9
+  },
+  "M": {
+    "name": "mega",
+    "exponent": 6
+  },
+  "k": {
+    "name": "kilo",
+    "exponent": 3
+  },
+  "h": {
+    "name": "hecto",
+    "exponent": 2
+  },
+  "da": {
+    "name": "deca",
+    "exponent": 1
+  },
+  "d": {
+    "name": "deci",
+    "exponent": -1
+  },
+  "c": {
+    "name": "centi",
+    "exponent": -2
+  },
+  "m": {
+    "name": "milli",
+    "exponent": -3
+  },
+  "µ": {
+    "name": "micro",
+    "exponent": -6
+  },
+  "n": {
+    "name": "nano",
+    "exponent": -9
+  },
+  "p": {
+    "name": "pico",
+    "exponent": -12
+  },
+  "f": {
+    "name": "femto",
+    "exponent": -15
+  },
+  "a": {
+    "name": "atto",
+    "exponent": -18
+  },
+  "z": {
+    "name": "zepto",
+    "exponent": -21
+  },
+  "y": {
+    "name": "yocto",
+    "exponent": -24
+  },
+  "r": {
+    "name": "ronto",
+    "exponent": -27
+  },
+  "q": {
+    "name": "quecto",
+    "exponent": -30
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "dimensions": {
+    "mass": 1,
+    "length": 2,
+    "time": -2
+  },
+  "reference_unit": "N*m",
+  "systems": {
+    "metric": {
+      "N*m": {
+        "name": {
+          "singular": "newton meter",
+          "plural": "newton meters"
+        },
+        "components": {
+          "N": 1,
+          "m": 1
+        }
+      }
+    }
+  },
+  "default_result": false
+}
